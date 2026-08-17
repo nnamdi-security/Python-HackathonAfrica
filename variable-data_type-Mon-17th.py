@@ -151,3 +151,74 @@ print(f"5 | 3 = {5 | 3}")   #OR produces 1 if at least one of the bits is 1.
 print(f"5 ^ 3 = {5 ^ 3}")   #XOR produces 1 when the two bits are different.
 print(f"5 << 1 = {5 << 1}") #Shifting left by 1 position adds a 0 on the right:
 print(f"5 >> 1 = {5 >> 1}") #For positive integers, shifting right by one position is essentially integer division by 2
+
+
+
+
+# Exercise 16 — Check if a Number is Even or Odd
+num = int(input("Enter a number: "))
+
+if num % 2 == 0:
+    print(f"{num} is an even number.")
+else:
+    print(f"{num} is a odd number.")
+
+
+
+# Exercise 17 — Find the Largest Number
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    largest = num1
+elif num2 >= num1 and num2 >= num3:
+    largest = num2
+else:
+    largest = num3
+
+print(f"The largest number is: {largest}")
+
+
+
+
+
+#Exercise 18 — Check if a Year is a Leap Year
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+
+
+
+# Exercise 19 — Grade Classifier
+score = float(input("Enter a score (0-100): "))
+
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+elif score >= 70:
+    grade = "C"
+elif score >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+print(f"Score: {score} | Grade: {grade}")
+
+
+
+
+
+# Exercise 20 — Extract the Domain from an Email
+email = input("Enter an email address: ")
+
+if "@" in email:
+    domain = email.split("@")[1]
+    print(f"Domain: {domain}")
+else:
+    print("Invalid email format.")
