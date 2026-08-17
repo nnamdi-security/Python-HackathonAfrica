@@ -78,7 +78,76 @@ print(bool2_to_int)
 
 
 # Exercise 9 — Convert List to a String and Back
+text = ["The", "Lord", "is", "good"]
+text_string = " ".join(text)
+print(text_string)
+
+text_string.split()
+print(text_string)
 
 
 
 
+# Exercise 10 — Convert Dictionary Keys and Values to Lists
+dict_example = {'a': 1, 'b': 2, 'c': 3}
+keys = list(dict_example.keys())
+values = list(dict_example.values())
+
+
+
+# Exercise 11 — Perform Arithmetic Operations
+a = 15
+b = 4
+
+print("Addition:", a + b)       
+print("Subtraction:", a - b)     
+print("Multiplication:", a * b)
+print("Division:", a / b)        
+print("Modulus:", a % b)        
+
+
+
+# Exercise 12 — Use Comparison Operators
+print("10 > 5:", 10 > 5)
+print("10 < 5:", 10 < 5)
+print("10 == 10:", 10 == 10)
+print("10 != 5:", 10 != 5)
+print("10 >= 5:", 10 >= 5)
+print("10 <= 5:", 10 <= 5)
+
+
+
+# Exercise 13 — Use Logical Operators
+print("True and False:", True and False)
+print("True or False:", True or False)
+print("Not True:", not True)
+
+
+
+# Exercise 14 — Use Assignment Operators
+initial_number = 10
+print("Initial Value:", initial_number)
+
+initial_number += 5
+print("After += :", initial_number)
+
+initial_number -= 3
+print("After -= :", initial_number)
+
+initial_number *= 2
+print("After *= :", initial_number)
+
+initial_number /= 3
+print("After /= :", initial_number)
+
+initial_number %= 8
+print("After %= :", initial_number)
+
+
+
+#Exercise 15 — Use Bitwise Operators
+print(f"5 & 3 = {5 & 3}")   #AND compares each bit. A bit is 1 only when both bits are 1.
+print(f"5 | 3 = {5 | 3}")   #OR produces 1 if at least one of the bits is 1.
+print(f"5 ^ 3 = {5 ^ 3}")   #XOR produces 1 when the two bits are different.
+print(f"5 << 1 = {5 << 1}") #Shifting left by 1 position adds a 0 on the right:
+print(f"5 >> 1 = {5 >> 1}") #For positive integers, shifting right by one position is essentially integer division by 2
