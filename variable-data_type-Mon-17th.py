@@ -64,4 +64,21 @@ print(int_to_float)
 
 
 
+# Exercise 8 — Convert a Boolean to an Integer
+isRaining = True
+bool_to_int = int(isRaining)
+
+is_loggedin = False
+bool2_to_int = int(is_loggedin)
+
+print(bool_to_int)
+print(bool2_to_int)
+
+
+
+
+# Exercise 9 — Convert List to a String and Back
+
+
+
 
