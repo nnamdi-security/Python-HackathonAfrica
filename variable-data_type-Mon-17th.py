@@ -222,3 +222,71 @@ if "@" in email:
     print(f"Domain: {domain}")
 else:
     print("Invalid email format.")
+
+
+
+
+# Exercise 21 — Count the Occurrences of a Word in a Review
+review = input("Enter your review: ")
+
+words = review.lower().split()
+
+count = words.count("quality")
+
+print(f'The word "quality" appears {count} time(s).')
+
+
+
+
+
+# Exercise 22 — Format an Invoice
+print(f"{'Item':<12}{'Price'}")
+print("-" * 19)
+print(f"{'Laptop':<12}${1200.99:.2f}")
+print(f"{'Mouse':<12}${25.50:.2f}")
+
+
+
+
+
+
+# Exercise 23 — Reverse Words in a Sentence
+sentence = "Lkhibra Academy is great"
+
+words = sentence.split()
+
+words.reverse()
+
+result = " ".join(words)
+
+print(result)
+
+
+
+
+
+# Exercise 24 — Extract Hashtags from a Social Media Post
+import re
+
+post = "Loving #Python and #Coding at #LkhibraAcademy"
+
+hashtags = re.findall(r"#\w+", post)
+
+print(hashtags)
+# # → looks for the hashtag symbol.
+#\w+ → looks for one or more letters, numbers, or underscores after #.
+#re.findall() → finds all matches in the sentence and returns them as a list.
+
+
+
+# Exercise 25 — Validate a Password Strength
+password = input("Enter your password: ")
+
+has_number = any(char.isdigit() for char in password)
+has_special = any(not char.isalnum() for char in password)
+
+if len(password) >= 8 and has_number and has_special:
+    print("Password meets the security criteria.")
+else:
+    print("Password does not meet the security criteria.")
+#isalnum() checks whether a character is a letter or number.
