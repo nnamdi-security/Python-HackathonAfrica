@@ -290,3 +290,66 @@ if len(password) >= 8 and has_number and has_special:
 else:
     print("Password does not meet the security criteria.")
 #isalnum() checks whether a character is a letter or number.
+
+
+
+
+
+# Exercise 26 — Remove Extra Spaces from a String
+text = " Hello   World  !  "
+
+cleaned_text = " ".join(text.split()) #split() separates the string by any whitespace (spaces, tabs, newlines) and ignores extra spaces.
+
+
+print(cleaned_text)
+
+
+
+
+
+# Exercise 27 — Convert a String to Title Case
+text = "lkhibra academy python training"
+
+title_text = text.title()
+
+print(title_text)
+
+
+
+
+
+# Exercise 28 — Replace Words in a Text
+text = "I love Python programming"
+
+new_text = text.replace("Python", "Java")
+
+print(new_text)
+
+
+
+
+
+# Exercise 29 — Check How a String Starts or Ends
+filename = input("Enter the filename: ")
+
+if filename.startswith("report") and filename.endswith(".pdf"):
+    print("This is a valid report PDF.")
+else:
+    print("This is not a valid report PDF.")
+
+
+
+
+
+
+# Mini Project — Palindrome Checker
+text = input("Enter a word or phrase: ")
+
+cleaned_text = text.replace(" ", "").lower()
+
+reversed_text = cleaned_text[::-1]
+
+if cleaned_text == reversed_text:
+    print("It is a palindrome.")
+else:
+    print("It is not a palindrome.")
