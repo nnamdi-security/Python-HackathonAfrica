@@ -262,3 +262,9 @@ my_leaf = ElectricCar('nissan', 'leaf', 2024)
 
 my_leaf.battery.get_range()
 my_leaf.battery.upgrade_battery(40)
+
+
+
+#PAGE 312
+divider("9-10. Imported Restaurant")
+
